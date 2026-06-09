@@ -1,11 +1,7 @@
-import { readFileSync, existsSync, statSync } from "fs";
-import { join, extname, dirname } from "path";
+import { FILES } from "./embedded-files";
+import { extname } from "path";
 import { exec } from "child_process";
-import { fileURLToPath } from "url";
 
-// Use process.execPath directory so the binary finds `out/` next to itself
-const BASE_DIR = dirname(process.execPath);
-const STATIC_DIR = join(BASE_DIR, "out");
 const PORT = 3000;
 
 const MIME: Record<string, string> = {
@@ -22,19 +18,11 @@ const MIME: Record<string, string> = {
 };
 
 function resolve(pathname: string): string | null {
-  let filePath = join(STATIC_DIR, pathname);
-
-  if (existsSync(filePath) && !statSync(filePath).isDirectory()) {
-    return filePath;
-  }
-  if (existsSync(filePath + ".html")) {
-    return filePath + ".html";
-  }
-  if (existsSync(join(filePath, "index.html"))) {
-    return join(filePath, "index.html");
-  }
-  const notFound = join(STATIC_DIR, "404.html");
-  return existsSync(notFound) ? notFound : null;
+  if (FILES[pathname]) return pathname;
+  if (FILES[pathname + ".html"]) return pathname + ".html";
+  if (FILES[pathname.replace(/\/$/, "") + "/index.html"]) return pathname.replace(/\/$/, "") + "/index.html";
+  if (FILES["/404.html"]) return "/404.html";
+  return null;
 }
 
 function openBrowser(url: string) {
@@ -49,11 +37,11 @@ Bun.serve({
   port: PORT,
   fetch(req) {
     const { pathname } = new URL(req.url);
-    const filePath = resolve(pathname);
-    if (!filePath) return new Response("Not found", { status: 404 });
+    const key = resolve(pathname);
+    if (!key) return new Response("Not found", { status: 404 });
 
-    const mime = MIME[extname(filePath)] ?? "application/octet-stream";
-    return new Response(readFileSync(filePath), {
+    const mime = MIME[extname(key)] ?? "application/octet-stream";
+    return new Response(Bun.file(FILES[key]), {
       headers: { "Content-Type": mime },
     });
   },

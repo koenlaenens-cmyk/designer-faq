@@ -5,6 +5,7 @@ out
 *.log
 index.html.backup
 dist/
+embedded-files.ts
 .env
 .env.local
 .env*.local
