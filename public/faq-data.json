@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "title": "Banqup Design System FAQ",
+    "subtitle": "Onboarding guide for new product designers",
+    "lastUpdated": "2026-04-20"
+  },
+  "categories": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "description": "Essential resources and setup for new designers",
+      "icon": "",
+      "questions": [
+        {
+          "id": "where-resources",
+          "question": "Where do I find the design system resources?",
+          "answer": "Our design system is organized into several Figma libraries:\n\n**Core Libraries:**\n- **Foundations** - Core design choices including color, typography, tokens, spacing, sizing, and shadows\n- **Icon Library** - Complete icon set\n- **Web Components** - UI components for web applications\n- **Mobile Components** - UI components for mobile applications\n\n**Advanced Libraries:**\n- **Web Patterns** - Design patterns for currency formatting, searching, filtering, loading, system feedback, and more\n- **Domain Templates** - Reusable components and templates organized by domain (Payments, Documents, Business Partners, Network Connections, etc.)\n\n*Make sure to activate these libraries in your Figma file if you haven't already.*"
+        },
+        {
+          "id": "figma-access",
+          "question": "How do I get access to the Figma design library?",
+          "answer": "All design system files and libraries are available in our Figma team workspace:\n\n**Design System Workspace:** https://www.figma.com/files/1088490715508836265/team/1101113389501785231\n\nOnce you have access, the easiest way to use the design system is by **inserting library instances** directly into your Figma file. This ensures you're always using the latest components and styles."
+        },
+        {
+          "id": "required-tools",
+          "question": "What tools and software do I need?",
+          "answer": "Your design work will mainly happen in **Figma** and our coded counterpart is managed via **Storybook**.\n\n**Figma** - For all design work, accessing component libraries, and collaborating with the design team.\n\n**Storybook** - To see the live coded components, technical documentation, and how components are implemented in code."
+        },
+        {
+          "id": "storybook-location",
+          "question": "Where is the Storybook documentation?",
+          "answer": "Storybook can be found here:\n\n**https://storybook.test.appstools.gcpeuw1.upst.xyz/?path=/docs/getting-started--docs**\n\n⚠️ **VPN Required** - You need to be connected to the VPN to access Storybook. We use **Cato** as our VPN client. Check with your manager or IT contact for instructions on how to connect to the VPN."
+        },
+        {
+          "id": "support-channels",
+          "question": "Is there a communication channel for design system questions?",
+          "answer": "We use **Google Chat** as our main communication platform to discuss design system topics. You can use the following channels:\n\n**UX Squad** - General product design channel for design discussions and questions.\n\n**Mobile - Design Fundamentals** - Channel with mobile developers and managers for mobile-specific design topics.\n\n**[UX] Design System Releases & Updates** - Official channel to communicate design system releases, updates, and announcements."
+        }
+      ]
+    },
+    {
+      "id": "components-patterns",
+      "title": "Components & Patterns",
+      "description": "Available components and when to use them",
+      "icon": "",
+      "questions": [
+        {
+          "id": "available-components",
+          "question": "What components are available and production-ready?",
+          "answer": "The readiness status of all components in Storybook can be found in this spreadsheet:\n\n**Component Readiness Tracker**\nhttps://docs.google.com/spreadsheets/d/1Rmjnnn7tOGhkeMiUNWZs4Xyyhr44FvitztTaK6OfK4w/edit?gid=478494043#gid=478494043\n\nThis spreadsheet tracks which components are production-ready, in development, or planned."
+        },
+        {
+          "id": "component-variants",
+          "question": "Where can I see all component variants and states?",
+          "answer": "In the component libraries, we use a dedicated page for each component. On those pages you can find:\n\n- All available component variants\n- Different component states (hover, active, disabled, etc.)\n- Usage documentation and guidelines"
+        },
+        {
+          "id": "usage-guidelines",
+          "question": "Are there usage guidelines for each component?",
+          "answer": "Yes, we have dedicated frames in Figma for each component that describe the usage guidelines.\n\nThese frames include information about when to use the component, best practices, and design considerations."
+        },
+        {
+          "id": "real-examples",
+          "question": "Can I see real examples of components used in our products?",
+          "answer": "Yes, in the teams overview you'll find:\n\n**Banqup 3.0 - Concepts** - Contains web product project work and real implementation examples.\n\n**Banqup - Mobile** - Contains mobile product project work and real implementation examples.\n\nThese teams contain all our project work where you can see how components are used in real product contexts."
+        }
+      ]
+    },
+    {
+      "id": "design-foundations",
+      "title": "Design Foundations",
+      "description": "Colors, typography, spacing, and core styles",
+      "icon": "",
+      "questions": [
+        {
+          "id": "color-palette",
+          "question": "What color palette should I use? How do I access color tokens?",
+          "answer": "In our UI we use design tokens. The tokens are managed via the **Foundations** library.\n\nMake sure this library is enabled in your Figma file to access all color tokens, including semantic colors, neutral scales, and brand colors.\n\nDesign tokens usage guidelines and an overview of our tokens can be found in the Design Tokens page of the Foundations file:\n\n**Design Tokens Documentation**\nhttps://www.figma.com/design/toAL6cGU5n3o1f7OrKggLe/Foundations?node-id=4831-221117&p=f&t=dsObiVjRLTG3YiAI-11"
+        },
+        {
+          "id": "typography",
+          "question": "What typography styles and scales are available?",
+          "answer": "Typography styles and documentation can be found in the Foundations library:\n\n**Typography Documentation**\nhttps://www.figma.com/design/toAL6cGU5n3o1f7OrKggLe/Foundations?node-id=4831-221117&p=f&t=dsObiVjRLTG3YiAI-11\n\nThis includes all available type scales, font weights, line heights, and semantic typography tokens."
+        },
+        {
+          "id": "spacing-system",
+          "question": "What spacing system should I follow?",
+          "answer": "Spacing scales and documentation can be found in the Foundations library:\n\n**Spacing Documentation**\nhttps://www.figma.com/design/toAL6cGU5n3o1f7OrKggLe/Foundations?node-id=5358-876&p=f&t=dsObiVjRLTG3YiAI-11\n\nThis includes all spacing tokens and guidelines for consistent layout and component spacing."
+        },
+        {
+          "id": "elevation-shadows",
+          "question": "How do I apply elevation/shadows correctly?",
+          "answer": "Shadow usage guidelines can be found in the Foundations library:\n\n**Shadow Documentation**\nhttps://www.figma.com/design/toAL6cGU5n3o1f7OrKggLe/Foundations?node-id=987-263614&p=f&t=dsObiVjRLTG3YiAI-11\n\nShadows are also available as effect styles via the Foundations library, which you can apply directly to your designs."
+        },
+        {
+          "id": "border-radius",
+          "question": "What are our border radius standards?",
+          "answer": "Border radius usage guidelines can be found in the size page of the Foundations library:\n\n**Border Radius Documentation**\nhttps://www.figma.com/design/toAL6cGU5n3o1f7OrKggLe/Foundations?node-id=6127-36514&t=dsObiVjRLTG3YiAI-11"
+        },
+        {
+          "id": "icon-libraries",
+          "question": "Are there icon libraries I should use?",
+          "answer": "Yes, we have several icon sets for different purposes:\n\n**UI Icons** - Use for icons in your UI (buttons, dropdowns, search fields, etc.)\n\n**App Icons** - Use when you want to show an app icon (e.g., Payment Accounts)\n\n**Payment Method Icons** - Use for displaying payment options\n\n**Illustrative Icons** - Use for bigger and colored icons\n\n**Cursor Icons** - Use to annotate your design documentation with cursors\n\n**Flags Icons** - Use for flags in your UI\n\n**Icon Library**\nhttps://www.figma.com/design/ciJPtNBLSl2YXE3oG5JTyB/Icons?node-id=0-1&p=f&t=lYXlpAZKhmAoOesw-11"
+        }
+      ]
+    },
+    {
+      "id": "design-workflow",
+      "title": "Design Workflow",
+      "description": "Processes, handoffs, and file organization",
+      "icon": "",
+      "questions": [
+        {
+          "id": "new-project-process",
+          "question": "What's the process for starting a new design project?",
+          "answer": "**1. Work in existing files**\nMake sure you're working in one of the existing files linked to the domain you're working on. If you need a new design file, check with your manager or the design team first. Discuss in one of the daily UX meetings or Design System sync meeting.\n\n**2. Use the file template**\nIf you create a new file, make sure you're using our file template:\nhttps://www.figma.com/design/bPnKHl0JIrUKJoSy5yQ6Kb/File-template?m=auto&t=4sGKByIdGAc2Uuyy-6\n\n**3. Enable required libraries**\nMake sure the Foundations, Icons, and Component libraries are enabled in your file.\n\n**4. Follow the file structure**\nCreate a page for each large flow. Make sure pages are in the appropriate section based on the step in the process: In Progress, In Review, Ready 4 Dev. Ideally your file should only contain production-ready designs and exploration. In-review work should exist in a branch.\n\n**5. Create a branch for work in progress**\nMake sure you create a branch for your work in progress. Use the Jira ticket's description as the name of your branch.\n*Example: BTX-29548 - [UX] Split Chip component*"
+        },
+        {
+          "id": "maintain-consistency",
+          "question": "How do I ensure my design stays consistent with the design system?",
+          "answer": "Only use our libraries and design tokens in your UI.\n\nThis ensures your designs automatically follow the design system standards and will stay consistent when the design system is updated."
+        },
+        {
+          "id": "handoff-process",
+          "question": "What's the handoff process to developers?",
+          "answer": "**1. Include engineers early**\nInclude engineers as soon as possible in your design process, so you can ping-pong any technical restrictions or opportunities.\n\n**2. Mark designs as ready**\nWhen a design is approved for production, make sure all your frames are marked as Ready for Dev.\n\n**3. Set up grooming meetings**\nSet up a grooming meeting with the product owner and engineers to clear out requirements, questions, expectations, etc.\n\n**4. Ensure assets are available**\nMake sure all assets and components are available for engineering.\n\n**5. Document non-obvious choices**\nMake sure to document non-obvious design choices like animations, logic-based interactions, condition-based content or UI, etc.\n\n⚠️ **It's the designer's responsibility that the engineering implementation is clear.**"
+        },
+        {
+          "id": "naming-conventions",
+          "question": "What file naming conventions should I follow?",
+          "answer": "File names follow the name of the application.\n\n**Examples:** Fundamentals, Payment Accounts, Documents app, Outbound Payments, Transaction Radar"
+        },
+        {
+          "id": "file-organization",
+          "question": "Should I design in the main library file or create separate files?",
+          "answer": "Always work in the main app file, but make sure to use branching for work-in-progress designs.\n\nShare the branch links with your stakeholders to review designs. Only when the design is approved, merge the branch to the main file."
+        }
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "description": "WCAG standards and accessibility guidelines",
+      "icon": "",
+      "questions": [
+        {
+          "id": "accessibility-standards",
+          "question": "What accessibility standards do we follow (WCAG level)?",
+          "answer": "We meet **WCAG AA minimum standards**.\n\n⚠️ **Important:** Make sure your designs are compliant by design and not treated as an afterthought. We will ask you to clean up your designs to comply with AA standards, so it's easier and less work to comply from the beginning, instead of reworking all your designs."
+        },
+        {
+          "id": "accessibility-guidelines",
+          "question": "Where can I find accessibility guidelines?",
+          "answer": "We don't have explicit accessibility guidelines, but always make sure:\n\n- **Color contrast meets AA standards** - Use contrast checkers to verify your color combinations\n- **UI is usable via keyboard** - Ensure all interactive elements can be accessed and used with keyboard navigation\n\nCheck the official WCAG documentation online to review the requirements:\n\n**WCAG Documentation**\nhttps://www.w3.org/WAI/WCAG21/quickref/"
+        },
+        {
+          "id": "color-contrast",
+          "question": "How do I check color contrast?",
+          "answer": "**Use our components** - Our components are completely AA compliant, so use them as much as possible.\n\n**For other UI elements** - We use the **Stark** plugin in Figma. It contains:\n\n- Contrast checker\n- Typography readability\n- Touch target minimum size\n- Vision simulator\n- Annotation tools for image alt text, focus order, etc."
+        },
+        {
+          "id": "component-accessibility",
+          "question": "Are components already accessible, or do I need to add annotations?",
+          "answer": "Components are fully accessible and meet AA minimum standards.\n\nYou don't need to add accessibility annotations for standard component usage."
+        }
+      ]
+    },
+    {
+      "id": "contributing",
+      "title": "Making Changes & Contributing",
+      "description": "Request components and propose improvements",
+      "icon": "",
+      "questions": [
+        {
+          "id": "missing-component",
+          "question": "What if I need a component that doesn't exist yet?",
+          "answer": "**General guideline: Just talk.**\n\n- Talk to the Design System manager\n- Talk to the UX team\n- Discuss in one of the UX dailies or weekly DS meetings\n\n**Governance Process**\nAs a general backup, we follow the Brad Frost Governance model:\n\n**Design System Governance Process**\nhttps://www.figma.com/board/z9RDJZkpVHyED7XvdMnL5p/Design-Tokens-Systems-Governance-Process--Community-?node-id=0-1&p=f&t=QeqYv3PyWHEawd7D-11"
+        },
+        {
+          "id": "request-component",
+          "question": "How do I request a new component or variant?",
+          "answer": "**Prepare your use case** - Make sure you've prepared your use case and can explain the need for it.\n\n**Team discussion** - The team will discuss how to move forward and decide:\n- Do we actually need a new component or variant?\n- What should the variants be?\n- What are the design properties?\n\n⚠️ **Just make sure you're prepared** before bringing it to the team."
+        },
+        {
+          "id": "modify-components",
+          "question": "Can I modify existing components for my project?",
+          "answer": "**No.** Changing designs in the design system files are done via the Design System manager.\n\n⚠️ **Always request a change and not just make changes** - This ensures consistency across all projects and prevents breaking changes."
+        },
+        {
+          "id": "propose-improvements",
+          "question": "What's the process for proposing design system improvements?",
+          "answer": "Similar to requesting new components or system changes, you need to **prepare your case**:\n\n- Explain **why** we need an improvement\n- Explain **how** you would improve it\n\nBring your proposal to the UX team meetings or Design System sync for discussion."
+        },
+        {
+          "id": "approval-process",
+          "question": "Who reviews and approves design system changes?",
+          "answer": "We have a **shared responsibility** in the UX team.\n\nWe discuss, we agree, and we move forward together."
+        }
+      ]
+    },
+    {
+      "id": "figma-to-code",
+      "title": "Figma-to-Code",
+      "description": "Design tokens, handoffs, and code mapping",
+      "icon": "",
+      "questions": [
+        {
+          "id": "token-mapping",
+          "question": "How do design tokens in Figma map to actual code?",
+          "answer": "**Currently, they don't.** We have a significant gap at the moment between Figma and Storybook.\n\nℹ️ **We're working on it** - We're making huge investments to solve this issue. The Design System manager is in talks with the front-end engineering team to align on this."
+        },
+        {
+          "id": "developer-access",
+          "question": "How do developers access the design system components?",
+          "answer": "Engineers have a dev seat in Figma, which gives them access to view and inspect the design system components and specifications."
+        },
+        {
+          "id": "handoff-requirements",
+          "question": "What should I include in my design handoff?",
+          "answer": "Make sure your designs contain everything an engineer needs for implementation:\n\n- **Interaction states** - Hover, active, focus, disabled, etc.\n- **Error states** - Invalid inputs, failed actions, etc.\n- **Golden path** - The ideal user flow\n- **Broken path** - Error scenarios and edge cases\n- **Annotations** - Annotate designs where needed\n- **Animations** - Describe transitions and motion\n- **Logic-based UI** - Describe conditional content and behavior"
+        },
+        {
+          "id": "code-connect",
+          "question": "Are there Code Connect mappings I should know about?",
+          "answer": "**Not yet.** Similar to the Storybook design debt challenge, we're working on this.\n\nℹ️ **In progress** - The Design System manager is working with the front-end engineering team to make this happen and connect the Figma components with the codebase via Figma's Code Connect."
+        },
+        {
+          "id": "preview-production",
+          "question": "How can I preview how my design will look in production?",
+          "answer": "We have multiple environments available: Dev, Test, UAT, Client, and Production (live).\n\nCheck with your manager, product manager, product owner, or engineering colleague to set up access.\n\n**Test Environment**\nhttps://app.test.btx.banqup.com/home\n\n**UAT Environment**\nhttps://app.uat.btx.banqup.com/home\n\n**Dev Environment**\nhttps://app.dev.btx.banqup.com/home"
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "title": "Common Issues & Troubleshooting",
+      "description": "Solutions for common problems",
+      "icon": "",
+      "questions": [
+        {
+          "id": "library-not-showing",
+          "question": "My Figma library components aren't showing up - what do I do?",
+          "answer": "**Check if the libraries are enabled** - Make sure the required libraries are enabled in your Figma file.\n\nIf the libraries are enabled but still not showing up, check with the UX team or Design System manager for assistance."
+        },
+        {
+          "id": "update-version",
+          "question": "How do I update to the latest version of the design system?",
+          "answer": "Make sure to pull in the library updates via Figma.\n\nFigma will notify you when library updates are available. Review the changes and accept the updates to sync your file with the latest design system version."
+        },
+        {
+          "id": "visual-discrepancies",
+          "question": "What if a component looks different in Storybook vs. Figma?",
+          "answer": "There's a high probability that these two environments are not synced.\n\n**What to do:**\n1. Check with the product manager or your manager about the priority and release deadline of the design work that uses out-of-sync components\n2. Based on the priority and deadline, we'll discuss this with the UX team\n3. We'll make sure the necessary work will be planned to sync the components"
+        },
+        {
+          "id": "report-bugs",
+          "question": "I found a bug in a component - where do I report it?",
+          "answer": "You can report bugs in several ways:\n\n- Mention it in one of the daily sync meetings\n- Bring it up in the Design System meeting\n- Send the Design System manager a message via Chat\n\n**Keep it simple** - You don't have to overcomplicate things or create a full-blown use case. The Design System manager will have a look and create a Jira ticket to fix the bug."
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Design System Governance",
+      "description": "Maintainers, updates, and roadmap",
+      "icon": "",
+      "questions": [
+        {
+          "id": "maintainers",
+          "question": "Who maintains the design system?",
+          "answer": "The Design System lead is **Koen Laenens**.\n\nFeel free to reach out via Google Chat for any design system related questions or discussions."
+        },
+        {
+          "id": "update-frequency",
+          "question": "How often is the design system updated?",
+          "answer": "We have **weekly releases on Friday**.\n\nMake sure to check for library updates in Figma and review the release notes to stay up to date with changes."
+        },
+        {
+          "id": "roadmap",
+          "question": "Where can I see what's coming next (roadmap)?",
+          "answer": "The roadmap doesn't exist yet in documentation.\n\nℹ️ **We're working on it** - The Design System team is currently working on creating a public roadmap to share upcoming features and improvements."
+        },
+        {
+          "id": "stay-updated",
+          "question": "How do I stay updated on changes and releases?",
+          "answer": "**Weekly Design System Meeting** - We share updates and discuss ongoing work in the weekly Design System meeting.\n\n**Friday Releases** - We communicate releases on Friday in the Google Chat release channel **[UX] Design System Releases & Updates**.\n\nMake sure to join these channels and meetings to stay informed about the latest changes."
+        }
+      ]
+    }
+  ]
+}

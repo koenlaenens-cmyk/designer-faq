@@ -1,0 +1,9 @@
+.vercel
+node_modules
+.next
+out
+*.log
+index.html.backup
+.env
+.env.local
+.env*.local
