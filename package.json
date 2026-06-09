@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "package":"npm run build && mkdir -p dist && cp -r out dist/out && bun build --compile --target bun-linux-x64 serve.ts --outfile dist/designer-faq-linux && bun build --compile --target bun-darwin-x64 serve.ts --outfile dist/designer-faq-mac-intel && bun build --compile --target bun-darwin-arm64 serve.ts --outfile dist/designer-faq-mac-arm && bun build --compile --target bun-windows-x64 serve.ts --outfile dist/designer-faq-windows.exe"
   },
   "dependencies": {
     "next": "^14.2.35",

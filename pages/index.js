@@ -1,21 +1,20 @@
-import { useEffect, useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Head from 'next/head'
+import path from 'path'
+import fs from 'fs'
 
-export default function Home() {
-  const [faqData, setFaqData] = useState(null)
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'public', 'faq-data.json')
+  const faqData = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  return { props: { faqData } }
+}
+
+export default function Home({ faqData }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [showClearBtn, setShowClearBtn] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
   const searchInputRef = useRef(null)
-
-  // Load FAQ data
-  useEffect(() => {
-    fetch('/faq-data.json')
-      .then(res => res.json())
-      .then(data => setFaqData(data))
-      .catch(err => console.error('Error loading FAQ data:', err))
-  }, [])
 
   // Handle search input
   const handleSearchChange = (e) => {

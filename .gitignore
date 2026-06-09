@@ -4,6 +4,7 @@ node_modules
 out
 *.log
 index.html.backup
+dist/
 .env
 .env.local
 .env*.local
